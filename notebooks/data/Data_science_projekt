@@ -63,3 +63,12 @@ print(f"Der Datensatz enthält {df.shape[0]} Zeilen und {df.shape[1]} Spalten.")
 ## 5.4 Modellvalidierung und -evaluation
 # Erläutern Sie hier Ihre Methoden zur Modellvalidierung und -evaluation und fügen Sie den entsprechenden Code ein, z.B.:
 {{ code_zur_modellvalidierung_und_evaluation }}
+
+# 6. Ergebnisse
+## 6.1 Visualisierungen der Ergebnisse
+# Fügen Sie hier Ihre Visualisierungen der Ergebnisse ein, z.B.:
+{{ visualisierungen_der_ergebnisse }}
+
+## 6.2 Interpretation der Ergebnisse
+# Erläutern Sie hier die wichtigsten Erkenntnisse aus Ihrer Analyse und deren Implikationen.
+
