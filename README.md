@@ -1,48 +1,86 @@
-**Abstract:**
-Diese Projektarbeit untersucht die Vorhersage der Schlafqualität auf Basis verschiedener Gesundheits- und Schlafmetriken unter Einsatz von maschinellem Lernen. Der verwendete Datensatz ist vollständig synthetisch und umfasst Messungen wie Herzfrequenzvariabilität, Körpertemperatur, Bewegungen im Schlaf, Schlafdauer, Koffeinkonsum, Stresslevel, Konsistenz der Schlafenszeiten und Lichtexposition. Ziel des Projekts ist es, die Einflüsse dieser Faktoren auf die Schlafqualität zu analysieren und die besten Modelle zu identifizieren, um genaue Vorhersagen treffen zu können. Die verwendeten Modelle reichen von einfacheren Verfahren wie der linearen Regression und k-Nearest Neighbors (kNN) bis hin zu komplexeren Modellen wie Random Forest, Support Vector Machines (SVM) und XGBoost. Die Ergebnisse zeigen, dass die komplexeren Modelle eine deutlich höhere Genauigkeit bei der Vorhersage der Schlafqualität erzielen. In der Diskussion wird zudem das Potenzial für zukünftige Arbeiten, wie die Erweiterung des Modells durch zusätzliche Daten zu Lebensstil und Gesundheitsfaktoren, erörtert.
+# Projektarbeit: Analyse der Einflussfaktoren auf die Schlafqualität mittels maschinellen Lernens
 
-**Inhaltsverzeichnis:**
-1. **Einleitung**  
-   1.1 Hintergrund und Motivation  
-   1.2 Zielsetzung und Forschungsfragen  
-   1.3 Aufbau der Arbeit  
+Verfasst im Rahmen der EN ISO / IEC 17024-Zertifizierungsprüfung von  
+**Thomas Fosu Serwah**  
+04.10.2024
 
-2. **Datenbeschreibung**  
-   2.1 Datensatzbeschreibung  
-   2.2 Datenmerkmale  
-   2.3 Datenaufbereitung und Feature Engineering  
+---
 
-3. **Methodik**  
-   3.1 Auswahl der Modelle  
-   3.2 Datenaufbereitung (Normalisierung und Standardisierung)  
-   3.3 Trainings- und Testdatenaufteilung  
+## Inhaltsverzeichnis
 
-4. **Modelltraining und -bewertung**  
-   4.1 Modelle und Trainingsmethoden  
-   4.2 Hyperparameter-Tuning  
-   4.3 Evaluationsmetriken  
+1. [Einleitung](#einleitung)
+2. [Projektbeschreibung](#projektbeschreibung)
+3. [Zielsetzung](#zielsetzung)
+4. [Methodik](#methodik)
+5. [Ergebnisse](#ergebnisse)
+6. [Schlussfolgerungen](#schlussfolgerungen)
+7. [Ausblick](#ausblick)
+8. [Anforderungen](#anforderungen)
+9. [Anleitung zur Reproduktion](#anleitung-zur-reproduktion)
+10. [Kontakt](#kontakt)
 
-5. **Ergebnisse und Diskussion**  
-   5.1 Modellvergleich (Einfachere vs. Komplexere Modelle)  
-   5.2 Feature-Importance-Analyse  
-   5.3 Vorhersage der Schlafqualität  
+---
 
-6. **Schlussfolgerungen und Ausblick**  
-   6.1 Zusammenfassung der Ergebnisse  
-   6.2 Potenzielle Anwendungen  
-   6.3 Zukünftige Arbeiten  
+## Einleitung
 
-7. **Literaturverzeichnis**  
+In der modernen Gesellschaft beeinflussen zahlreiche Faktoren die Schlafqualität der Menschen. Stress, Koffeinkonsum und digitale Medien sind nur einige der Elemente, die zu Schlafstörungen führen können. Diese Projektarbeit untersucht mithilfe von maschinellen Lernverfahren die verschiedenen Einflussfaktoren auf die Schlafqualität, um ein tieferes Verständnis für die zugrunde liegenden Zusammenhänge zu gewinnen.
 
-8. **Abbildungsverzeichnis**  
+## Projektbeschreibung
 
-9. **Anhang**  
-   9.1 Anhang A: Beispielcode für Modelltraining  
-   9.2 Anhang B: Hyperparameter-Tuning-Ergebnisse  
-   9.3 Anhang C: Zusätzliche Visualisierungen  
+Diese Arbeit analysiert Daten, die verschiedene Gesundheits- und Lebensstilmetriken umfassen, um herauszufinden, welche Faktoren die Schlafqualität am stärksten beeinflussen. Dabei wird insbesondere der Koffeinkonsum in den Fokus gerückt, um Erkenntnisse darüber zu gewinnen, wie sich dieser auf das Schlafverhalten auswirkt.
 
+## Zielsetzung
 
+- **Identifikation der Hauptfaktoren**: Bestimmen, welche Variablen den größten Einfluss auf die Schlafqualität haben.
+- **Modellierung der Zusammenhänge**: Einsatz von maschinellen Lernmodellen zur Vorhersage der Schlafqualität basierend auf den identifizierten Faktoren.
+- **Verbesserung der Schlafqualität**: Entwicklung von Empfehlungen zur Reduzierung negativer Einflussfaktoren, insbesondere für Personen mit hohem Koffeinkonsum.
 
+## Methodik
 
+- **Datenbeschaffung**: Verwendung eines synthetischen Datensatzes mit Gesundheits- und Schlafmetriken.
+- **Datenvorverarbeitung**: Bereinigung und Vorbereitung der Daten, Erstellung neuer Features.
+- **Modellierung**: Anwendung verschiedener maschineller Lernmodelle, darunter Lineare Regression, Random Forest und Support Vector Regression (SVR).
+- **Evaluation**: Vergleich der Modelle anhand von Metriken wie R² und Mean Squared Error (MSE).
+- **Visualisierung**: Einsatz von Diagrammen und Grafiken zur Darstellung der Ergebnisse.
 
+## Ergebnisse
 
+- **Haupteinflussfaktoren**: Der Koffeinkonsum wurde als signifikanter Prädiktor für die Schlafqualität identifiziert, gefolgt von Stresslevel, Schlafdauer und Lichtexposition.
+- **Modellleistung**: Der Random Forest erzielte die höchste Vorhersagegenauigkeit, was auf die Fähigkeit hindeutet, komplexe nichtlineare Zusammenhänge zu erfassen.
+- **Feature Importance**: Konsistente Identifizierung der wichtigsten Variablen über verschiedene Modelle hinweg, was die Robustheit der Ergebnisse unterstreicht.
+
+## Schlussfolgerungen
+
+Die Analyse zeigt, dass der Koffeinkonsum einen maßgeblichen Einfluss auf die Schlafqualität hat. Um die Schlafqualität von Personen, die regelmäßig Kaffee konsumieren, zu verbessern, ist es essenziell, weitere reale Daten zu sammeln und detailliertere Untersuchungen durchzuführen. Die Ergebnisse legen nahe, dass durch gezielte Interventionen, wie die Reduzierung des Koffeinkonsums und das Stressmanagement, die Schlafqualität verbessert werden kann.
+
+## Ausblick
+
+- **Erweiterung der Datengrundlage**: Sammlung und Analyse von realen Daten, um die Generalisierbarkeit der Modelle zu erhöhen.
+- **Tiefergehende Untersuchungen**: Berücksichtigung weiterer Einflussfaktoren wie genetischer Prädispositionen und detaillierter physiologischer Messungen.
+- **Anwendung von Deep Learning**: Einsatz tiefer neuronaler Netze zur Erkennung noch komplexerer Muster in den Daten.
+- **Langzeitstudien**: Durchführung longitudinaler Studien, um kausale Zusammenhänge zu identifizieren und die Wirkung von Interventionen zu bewerten.
+
+## Anforderungen
+
+- **Software**: Python 3.x
+- **Bibliotheken**:
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+
+## Anleitung zur Reproduktion
+
+1. **Repository klonen**: Laden Sie das Projekt aus dem entsprechenden Repository herunter.
+2. **Umgebung einrichten**: Installieren Sie die erforderlichen Python-Bibliotheken.
+3. **Datensatz bereitstellen**: Stellen Sie sicher, dass der Datensatz `wearable_tech_sleep_quality_1.csv` im Arbeitsverzeichnis vorhanden ist.
+4. **Notebook ausführen**: Öffnen Sie das Jupyter Notebook `Analyse_Schlafqualitaet.ipynb` und führen Sie die Zellen der Reihe nach aus.
+5. **Ergebnisse überprüfen**: Analysieren Sie die generierten Visualisierungen und Modellbewertungen.
+
+## Kontakt
+
+Für Fragen oder Anmerkungen wenden Sie sich bitte an:
+
+**Thomas Fosu Serwah**  
+E-Mail: tom.blessed47@gmail.com
